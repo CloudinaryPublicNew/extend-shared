@@ -1,10 +1,14 @@
 
 /**
+ * 
+ * Project in progress
+ * 
 requires: 
 cloudinary@1.10.0
 axios@0.18.0
 watson-developer-cloud@3.0.7
 moment@2.20.1
+
 */
 
 const cloudinary = require('cloudinary');
