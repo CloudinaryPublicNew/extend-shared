@@ -1,6 +1,8 @@
 /**
-* @param context {WebtaskContext}
+* 
+* 
 */
 module.exports = function(context, cb) {
-  cb(null, { hello: context.query.name || 'Anonymous' });
+  console.log(context.data);
+  cb(null, { message:'webhook called see wt logs'});
 };
