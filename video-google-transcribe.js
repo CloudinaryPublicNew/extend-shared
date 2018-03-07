@@ -3,8 +3,8 @@
 * https://www.npmjs.com/package/parse-filepath
 * Requires cloudinary and parse-filepath
 * Pass a url  or public_id 
-* https://evangelism.cloudinary.auth0-extend.com/video-google-transcribe?url=<url to resource>>&authKey=<authKey>
-* https://evangelism.cloudinary.auth0-extend.com/video-google-transcribe?public_id=<url to resource>&authKey=<authKey>
+* https://evangelism.cloudinary.auth0-extend.com/video-google-transcribe?url=<url to resource>>&auth_key=<auth_key>
+* https://evangelism.cloudinary.auth0-extend.com/video-google-transcribe?public_id=<url to resource>&auth_key=<auth_key>
 */
 
 
