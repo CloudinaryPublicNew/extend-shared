@@ -16,9 +16,9 @@ var parsePath = require('parse-filepath');
 module.exports = function(context, cb) {
   
   if(context.secrets.WT_API_KEY != context.data.auth_key){
-  const message = 'You are not authorized to use this api without an auth_key';
-  return  cb(null, message);
-}
+    const message = 'You are not authorized to use this api without an auth_key';
+    return  cb(null, message);
+  }
 
   
    cloudinary.config({
