@@ -7,7 +7,7 @@ var app = express();
 
 /**
 * @param context {WebtaskContext}
-*  Newsletter 
+*  
 *  Display HTML resource stored on cloudinary
 * 
 * Example:
