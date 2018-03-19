@@ -1,5 +1,12 @@
 /**
 * @param context {WebtaskContext}
+*  
+*  Display HTML resource stored on cloudinary
+* 
+* Example:
+* https://evangelism.cloudinary.auth0-extend.com/display-html?newsletter=2018/03_marco/2018_03_19_likitacao/index.html
+* 
+* ?newsletter=<path-to-newsletter-resource>
 */
 
 
