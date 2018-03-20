@@ -20,6 +20,7 @@ var app = express();
 app.use(bodyParser.json());
 
 app.get('/?*:resourcepath', function (req, res) {
+  
   var newsletter = req.resourcepath ||  '2018/03_marco/2018_03_19_likitacao/index.html' ;  // show example if not provided.
   var url = 'https://res.cloudinary.com/evino/raw/upload/v1521468541/Newsletter/' + newsletter;
       res.writeHead(200, { 'Content-Type': 'text/html '});
