@@ -14,7 +14,9 @@ var options = {ocr: "adv_ocr"};
       var ocrResult = result.info.ocr.adv_ocr.data[0].fullTextAnnotation.text || 0,
       publicId = result.public_id;
       if (ocrResult !== 0) {
-        cloudinary.v2.uploader.add_tag(ocrResult, publicId,
+        
+        var tags = ocrResult.join(' ');
+        cloudinary.v2.uploader.add_tag(tags, publicId,
           function(result) {
             console.log(result)
             cb(null, result);
