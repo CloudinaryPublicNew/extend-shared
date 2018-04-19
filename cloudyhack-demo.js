@@ -12,6 +12,9 @@ var options = {ocr: "adv_ocr"};
     cloudinary.v2.uploader.upload(url,options, function(error,result) {
       console.log(result);
       var ocrResult = result.info.ocr.adv_ocr.data[0].fullTextAnnotation.text || 0,
+      
+      console.log(ocrResult);
+      
       publicId = result.public_id;
       if (ocrResult !== 0) {
         var tags = ocrResult.split(' ');
