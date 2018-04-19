@@ -6,7 +6,16 @@ var cloudinary = require("cloudinary");
 
 function findByTag(context, cb){
   
-  cloudinary.api.resourcesBy()
+  var options ={context:true, tags:true, max_results:500};
+
+     cloudinary.v2.api.resources_by_tag("imageCon", options,
+      function(error, result){
+        if(error){
+          cb(error);
+        }
+        console.log(result); 
+        cb(null, result);
+      });
   
 }
 
