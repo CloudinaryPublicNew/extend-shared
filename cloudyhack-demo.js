@@ -17,7 +17,7 @@ var options = {ocr: "adv_ocr"};
       
       publicId = result.public_id;
       if (ocrResult !== 0) {
-        cloudinary.v2.uploader.add_tag(tags, publicId,
+        cloudinary.v2.uploader.add_tag(ocrResult, publicId,
           function(result) {
             console.log(result)
             cb(null, result);
