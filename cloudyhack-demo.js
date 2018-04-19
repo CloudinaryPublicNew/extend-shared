@@ -51,6 +51,7 @@ module.exports = function(context, cb) {
       "api_secret": context.secrets.api_secret
     });
 
-findByTag(context, cb);
+//findByTag(context, cb);
+test(context,cb)
  
 };
