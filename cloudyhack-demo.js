@@ -8,7 +8,7 @@ var cloudinary = require("cloudinary");
 function test(context,cb){
   
 var url = "https://res.cloudinary.com/demo-robert/image/upload/v1523390181/ec18d5b63b46a112b486a97a9d8885d7.jpg";
-var options = {ocr: “adv_ocr”};
+var options = {ocr: "adv_ocr"};
     cloudinary.v2.uploader.upload(url,options, function(error,result) {
       console.log(result);
       var ocrResult = result.info.ocr.adv_ocr.data[0].fullTextAnnotation.text || 0,
