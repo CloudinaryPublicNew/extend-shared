@@ -17,7 +17,6 @@ var options = {ocr: "adv_ocr"};
       
       publicId = result.public_id;
       if (ocrResult !== 0) {
-        var tags = ocrResult.split(' ');
         cloudinary.v2.uploader.add_tag(tags, publicId,
           function(result) {
             console.log(result)
