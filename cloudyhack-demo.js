@@ -71,6 +71,6 @@ module.exports = function(context, cb) {
     });
 
 //findByTag(context, cb);
-test(context,cb)
+autoTagByID(context,cb)
  
 };
