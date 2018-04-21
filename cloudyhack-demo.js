@@ -6,8 +6,9 @@ var cloudinary = require("cloudinary");
 
 
 function autoTagByID(context, cb){
-var public_id = context.query.public_id;
-var options = {ocr: "adv_ocr"};
+var public_id = context.query.public_id  || "flooded_road_1";   //existing asset if none passed
+var options =  { categorization: "google_tagging,imagga_tagging,aws_rek_tagging", 
+  auto_tagging: 0.6 }
 
     cloudinary.v2.uploader.explicit(public_id,options, function(error,result) {
       if(error){
