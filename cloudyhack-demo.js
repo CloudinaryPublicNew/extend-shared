@@ -5,6 +5,24 @@
 var cloudinary = require("cloudinary");
 
 
+function autoTagByID(context, cb){
+var public_id = context.query.public_id;
+var options = {ocr: "adv_ocr"};
+
+    cloudinary.v2.uploader.explicit(public_id,options, function(error,result) {
+      if(error){
+        cb(error);
+      }
+      
+      if(result){
+        console.log(result);
+        cb(null, result);
+      }
+    });
+  
+}
+
+
 function test(context,cb){
   
 var url = "https://res.cloudinary.com/demo-robert/image/upload/v1523390181/ec18d5b63b46a112b486a97a9d8885d7.jpg";
