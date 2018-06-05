@@ -45,7 +45,7 @@ module.exports = function(context, cb) {
 
 function transcribe(context,cb){
   
-  var public_id = context.data.public_id ||'test-audio';
+  var public_id = context.data.public_id ||'CMG-DAM/video/SujataRao-UMC';
  
   // explicit 
   cloudinary.v2.uploader.explicit(public_id, 
